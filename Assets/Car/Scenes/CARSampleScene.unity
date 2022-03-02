@@ -331,7 +331,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: 1
     m_CustomResolution: -1
     m_Strength: 1
@@ -871,12 +871,12 @@ Prefab:
     - target: {fileID: 20294477236234234, guid: efc2e980bd6de4142bbbf36293e9f4c7,
         type: 2}
       propertyPath: m_RenderingPath
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 20294477236234234, guid: efc2e980bd6de4142bbbf36293e9f4c7,
         type: 2}
       propertyPath: m_AllowMSAA
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: efc2e980bd6de4142bbbf36293e9f4c7, type: 2}
