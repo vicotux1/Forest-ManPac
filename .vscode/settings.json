@@ -1,4 +1,4 @@
-﻿{
+{
     "files.exclude":
     {
         "**/.DS_Store":true,
@@ -52,5 +52,19 @@
         "ProjectSettings/":true,
         "temp/":true,
         "Temp/":true
-    }
+    },
+    "cSpell.words": [
+        "Coint",
+        "Funtion",
+        "ganastes",
+        "Perdiste",
+        "textos",
+        "UGUI"
+    ],
+    "cSpell.ignoreWords": [
+        "Jugador",
+        "ganaste",
+        "instanciar",
+        "monedas"
+    ]
 }
