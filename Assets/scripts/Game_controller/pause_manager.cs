@@ -13,7 +13,7 @@ public class pause_manager : MonoBehaviour {
 	void Start(){
 	canvasPausa.enabled = false;
 	Time.timeScale = 1;
-	Cursor.visible = false;
+	//Cursor.visible = false;
 	}
 	public void Resolution480p (){
 		 Screen.SetResolution(848, 480, false);
@@ -42,14 +42,32 @@ public class pause_manager : MonoBehaviour {
 	public void antiAliasing_Quality (int Level){
 	QualitySettings.antiAliasing = Level;
 	}
+	public void Get_Quality (int Level){
+	QualitySettings.SetQualityLevel(Level);
+	}
+
+	
 	public void scene(string name){ 
 	SceneManager.LoadScene (name);
 	}
-	public void Vsync(int Vsync){
-	QualitySettings.vSyncCount = Vsync;
+	public void ShadowsLevel(int Level){
+		if(Level==0){
+		QualitySettings.shadows = ShadowQuality.Disable;
+		}else if(Level==1){
+		QualitySettings.shadows = ShadowQuality.HardOnly;		
+		}else if(Level==2){
+        QualitySettings.shadows = ShadowQuality.All;
+		}
+	
 	}
-	public void fullScreen(){
-	Screen.fullScreen = !Screen.fullScreen;
+	public void fullScreen(int Level){
+	if(Level==0){
+		Screen.fullScreen = false;
+	}else if(Level==1){
+		Screen.fullScreen = true;
+	}
+	
+	
 	}
 
 		
