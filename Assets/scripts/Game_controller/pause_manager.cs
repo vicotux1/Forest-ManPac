@@ -8,13 +8,7 @@ using UnityEditor;
 #endif
 #endregion
 public class pause_manager : MonoBehaviour {
-    public Canvas canvasPausa;
-	#region Unity
-	void Start(){
-	canvasPausa.enabled = false;
-	Time.timeScale = 1;
-	//Cursor.visible = false;
-	}
+
 	public void Resolution480p (){
 		 Screen.SetResolution(848, 480, false);
 		}
@@ -27,20 +21,11 @@ public class pause_manager : MonoBehaviour {
 		public void Resolution1080p (){
 		 Screen.SetResolution(1920, 1080, false);
 		}
-	void Update(){
-		if (Input.GetButtonDown ("Cancel")){
-			Pause();}
-			}
-	#endregion
-	#region Pause		
-    public void Pause(){
-        canvasPausa.enabled = !canvasPausa.enabled;
-        Time.timeScale = Time.timeScale == 0 ? 1: 0;
-		}
-	#endregion
+	
+    
 	#region quality	
-	public void antiAliasing_Quality (int Level){
-	QualitySettings.antiAliasing = Level;
+	public void Set_Quality(int Level){
+		QualitySettings.antiAliasing = Level;
 	}
 	public void Get_Quality (int Level){
 	QualitySettings.SetQualityLevel(Level);
@@ -66,11 +51,7 @@ public class pause_manager : MonoBehaviour {
 	}else if(Level==1){
 		Screen.fullScreen = true;
 	}
-	
-	
-	}
-
-		
+}
 	public void Quit(){
      #if UNITY_EDITOR 
     EditorApplication.isPlaying = false;
