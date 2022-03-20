@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class LevelManagerText: MonoBehaviour{
     public TextMeshProUGUI ganastes;
     public float waitTime=3;
-    private LevelManagerUI ManagerUI;
+    public string NextLevel, MainMenu="MainMenu";
     [SerializeField] GameManager gamanager;
     bool GameStart;
     
@@ -17,11 +16,15 @@ public class LevelManagerText: MonoBehaviour{
    void Update(){
        //ManagerUI.StartOtro();
        StartOtro();
-      
+      if ( gamanager.currentGameState==GameState.pause)
+      {
+          Debug.Log(gamanager.currentGameState);
+          ganastes.text="el juego esta pausado";  
+      }
 
     }
     void Start(){
-        ManagerUI=GetComponent<LevelManagerUI>();
+        gamanager = FindObjectOfType<GameManager>();
         ganastes.text=" ";
         NextBola();
     }
@@ -35,8 +38,11 @@ public void NextBola(){
     }
     public void ganaste(){
         ganastes.text="";
-         gamanager.GameOver();
-         Destroy(gamanager.gameObject, 0f);
+         gamanager.GameOver(NextLevel);
+        /* if(NextLevel==MainMenu){
+        Destroy(gamanager.gameObject, 0f);
+         }*/
+        
     }
 
     public void StartOtro(){
@@ -47,8 +53,7 @@ public void NextBola(){
         }if(GameManager.Coins!=0){
             GameStart=true;
             gamanager.StartGame();
-            Debug.Log("ya hay monedas");
-              ganastes.text=""; 
+            ganastes.text=""; 
         }
 }  
     #endregion

@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 using TMPro;
 
 public class LevelManagerUI: MonoBehaviour{
     [Header("Game Datos")]
     [SerializeField]int Life;  
-    [SerializeField] int Score=0, Heart=10, coins ;
+    int Score, Heart, coins,highScore ;
     
     int lifeGameOver=0;
     [Header("textos")]
     [SerializeField]TextMeshProUGUI Points;
 
-     [SerializeField]TextMeshProUGUI Lives,HeartText;
+     [SerializeField]TextMeshProUGUI Lives,HeartText,HighScore;
      [Header("Dependencias")]
      
      [SerializeField] LevelManagerText ManagerText;
@@ -28,17 +28,18 @@ public class LevelManagerUI: MonoBehaviour{
         Score=GameManager.Points;
         Heart=GameManager.Hearts;
         coins=GameManager.Coins;
+        highScore=GameManager.HighScore;
         Lives.text=Life.ToString();
         Points.text= Score.ToString();
         HeartText.text=Heart.ToString();
+        HighScore.text=highScore.ToString();
         LifeCoint();
-       // StartOtro();
     }
     void Start(){
         Life=GameManager.lives;
         Lives.text=Life.ToString();
         Points.text= Score.ToString();
-        //StartOtro();
+        gamanager = FindObjectOfType<GameManager>();
     }
     public void StartOtro(){
         if (GameManager.Coins==0){

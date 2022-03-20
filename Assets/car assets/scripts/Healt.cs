@@ -5,15 +5,21 @@ using UnityEngine;
 public class Healt : MonoBehaviour
 {
     [SerializeField] string TagPlayer="Jugador";
-    [SerializeField] int Value=10;
-    [SerializeField] bool IsEnemy=false;
+    [SerializeField][Range(10,100)] int Value=10;
+    [SerializeField][Range(1,2)]int SerialID=1;
 
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){
-      if(IsEnemy=false){
+      if(SerialID==1){
           Destroy (this.gameObject);
+           Debug.Log("sumaste vida");
+           GameManager.Hearts+=Value;
+           GameManager.Points+=(Value/2);
+      }if (SerialID==2){
+       GameManager.Hearts-=Value;
+       GameManager.Points-=(Value/2);
       }   
-        GameManager.Hearts+=Value;
+        
         Debug.Log(GameManager.Hearts);
         }
   } 

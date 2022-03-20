@@ -1,5 +1,4 @@
-﻿#region previous assignments
-using System.Drawing;
+#region previous assignments
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,36 +19,84 @@ public class GameManager : MonoBehaviour{
     public static int Hearts=100;
     public static int Points=0;
     public static int Coins=0;
+    public static int HighScore;
+    public string MainMenu="MainMenu";
     public GameState currentGameState;
+    [SerializeField]private int Life,Healt, Colectables;
+    
 #endregion
+
+    void Awake() {
+         Singleton();
+    }
+    void Update(){
+        livesCount();
+        UpdateInts();
+        HeartsCount();
+    }
+
 
 #region metodos extras
     public void StartGame(){
         currentGameState=GameState.inGame;
-        Time.timeScale = Time.timeScale == 0 ? 1: 0;
+        Time.timeScale = 1;
+        Debug.Log("StartGame, time scale= "+ Time.timeScale);
     }
     public void PauseGame(){
         currentGameState=GameState.pause;
-        Time.timeScale = Time.timeScale == 0 ? 1: 0;
+        Time.timeScale = 0;
+        Debug.Log("Pausa,time scale "+ Time.timeScale);
     }
-    public void GameOver(){
+    public void GameOver(string SceneToLoad){
         currentGameState=GameState.gameOver;
         Time.timeScale = 0; 
+        Debug.Log("GameOver, time scale= "+ Time.timeScale);        
         Debug.Log("gameOver");
-	SceneManager.LoadScene ("MainMenu");
-    lives=3;
-    Hearts=100;
-    Points=0;
-    Coins=0;
+	   SceneManager.LoadScene (SceneToLoad);
+       if(SceneToLoad==MainMenu){
+           if(HighScore<=Points){
+            HighScore=Points;
+        }
+           ResetGame();
+       }
+        
 	}
+    void ResetGame(){
+        lives=3;
+        Hearts=100;
+        Points=0;
+        Coins=0;     
+        Time.timeScale = 1;
+    }
+    void NextLive(){    
+        Time.timeScale = 1;
+        Debug.Log("perdistes...pero te quedan vidas");
+    }
+    void livesCount(){
+        if(lives==0){
+            GameOver(MainMenu);
+        }        
+    }
+    void HeartsCount(){
+        if(Hearts<=0){
+            lives-=1;
+            Hearts=100;
+            
+           Time.timeScale = 0;
+            Invoke("NextLive", 10f);
+        }
+    }
+    void UpdateInts(){
+        Life=lives;
+        Healt=Hearts;
+        
+        
+        Colectables=Coins;
+    }
 #endregion
 
 #region singleton
-    void Awake() {
-    Singleton();
-    }
-    
-    
+        
     void Singleton(){
         if (gameManager!=null){
     Destroy(this.gameObject);      

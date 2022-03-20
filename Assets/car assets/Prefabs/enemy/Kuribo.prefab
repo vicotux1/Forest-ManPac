@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 3031419224889480418}
   - component: {fileID: 3286355336108094219}
   - component: {fileID: 3286355336108094220}
+  - component: {fileID: 2808797780855584796}
   m_Layer: 0
   m_Name: Kuribo
   m_TagString: Untagged
@@ -492,7 +493,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TagPlayer: Jugador
   Value: -30
-  IsEnemy: 1
+  SerialID: 1
+--- !u!95 &2808797780855584796
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403254335466344024}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 61e15bf72d6d21c448bd6fce831fe84c, type: 3}
+  m_Controller: {fileID: 9100000, guid: 0486517d950b9ba4cb40ef06ce51939f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2837842499316185054
 GameObject:
   m_ObjectHideFlags: 0

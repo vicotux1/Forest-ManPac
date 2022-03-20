@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 #endregion
 
 public class GMScore : MonoBehaviour{
@@ -24,9 +23,9 @@ public class GMScore : MonoBehaviour{
         textupdate();
     }
     private void Update() {
-       Scene();
+       //Scene();
     }
-    void Scene(){
+    /*void Scene(){
         if(counter>=MaxScore){
         if (SceneManager.GetActiveScene ().buildIndex <total_levels) {
             SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex + 1);
@@ -35,9 +34,9 @@ public class GMScore : MonoBehaviour{
             GM_Lives.GameOver();
             }
         }
-    }
+    }*/
     IEnumerator MainMenu(){
-        SceneManager.LoadScene("00");
+        //SceneManager.LoadScene("00");
         yield return new WaitForSeconds(3);
         Destroy(this.gameObject);
     }

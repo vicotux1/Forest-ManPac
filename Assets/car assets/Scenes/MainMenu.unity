@@ -937,7 +937,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CARSampleScene
+          m_StringArgument: 01
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &814897098
@@ -1614,6 +1614,14 @@ PrefabInstance:
     - target: {fileID: 2586488591209806652, guid: 856b8564a44b65044824914d424d1842, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -14.776401
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817502296554900482, guid: 856b8564a44b65044824914d424d1842, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.1973877
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817502296554900482, guid: 856b8564a44b65044824914d424d1842, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 31.545776
       objectReference: {fileID: 0}
     - target: {fileID: 7391129318313299464, guid: 856b8564a44b65044824914d424d1842, type: 3}
       propertyPath: m_AnchorMax.y
