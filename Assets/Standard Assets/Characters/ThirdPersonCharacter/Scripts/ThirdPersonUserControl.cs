@@ -13,6 +13,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
+        [SerializeField] string Horizontal, Vertical, Crounch, Jump;
+
         
         private void Start()
         {
@@ -37,7 +39,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (!m_Jump)
             {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                m_Jump = Input.GetButtonDown(Jump);
             }
         }
 
@@ -46,9 +48,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private void FixedUpdate()
         {
             // read inputs
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            float v = CrossPlatformInputManager.GetAxis("Vertical");
-            bool crouch = Input.GetKey(KeyCode.C);
+            float h = CrossPlatformInputManager.GetAxis(Horizontal);
+            float v = CrossPlatformInputManager.GetAxis(Vertical);
+            bool crouch = CrossPlatformInputManager.GetButtonDown(Crounch);
 
             // calculate move direction to pass to character
             if (m_Cam != null)

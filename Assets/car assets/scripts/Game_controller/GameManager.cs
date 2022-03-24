@@ -14,15 +14,26 @@ public class GameManager : MonoBehaviour{
     
 #region Asignaciones previas
     public static GameManager gameManager;
-     public static GameManager GM_Lives;
-    public static int lives=3;
-    public static int Hearts=100;
-    public static int Points=0;
-    public static int Coins=0;
+    public static GameManager GM_Lives;
+    public static int lives=3,Points=0, Coins=0,Hearts=100;
+
+    private int _Ejemplo=0;
+    public int Ejemplo{
+        get=>_Ejemplo;
+        set=>_Ejemplo=value;
+    }
+
     public static int HighScore;
     public string MainMenu="MainMenu";
     public GameState currentGameState;
     [SerializeField]private int Life,Healt, Colectables;
+    
+    public void HealtScore(){
+     if (Hearts >= 300){
+         Hearts=100;
+        lives++;        
+        }
+    } 
     
 #endregion
 
@@ -33,6 +44,7 @@ public class GameManager : MonoBehaviour{
         livesCount();
         UpdateInts();
         HeartsCount();
+        HealtScore();
     }
 
 
