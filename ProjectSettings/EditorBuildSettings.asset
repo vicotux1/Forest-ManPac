@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/car assets/Scenes/02.unity
     guid: 014c0d741a0520547965a33e38eed037
+  - enabled: 0
+    path: Assets/3d platfom game/skeleton_grunt.unity
+    guid: 2ce14eccf4be944458cdd7f633be3b24
   m_configObjects: {}

@@ -10,8 +10,8 @@ using UnityStandardAssets.CrossPlatformInput;
         private Rigidbody m_Rigidbody;
 
         void Update(){
-            float MoveX=CrossPlatformInputManager.GetAxis("Horizontal");
-            float MoveY=CrossPlatformInputManager.GetAxis("Vertical");
+            float MoveX=CrossPlatformInputManager.GetAxisRaw("Horizontal");
+            float MoveY=CrossPlatformInputManager.GetAxisRaw("Vertical");
             Move(MoveX, MoveY);
             
         }
