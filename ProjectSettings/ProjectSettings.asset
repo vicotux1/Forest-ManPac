@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Vicotux
-  productName: 3D platform
+  productName: 3D platform (Best Look)
   defaultCursor: {fileID: 2800000, guid: cec264fb1bcc613428f7a8f493fa0d84, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -47,7 +47,7 @@ PlayerSettings:
   defaultScreenWidthWeb: 854
   defaultScreenHeightWeb: 480
   m_StereoRenderingPath: 0
-  m_ActiveColorSpace: 0
+  m_ActiveColorSpace: 1
   m_MTRendering: 1
   mipStripping: 0
   numberOfMipsStripped: 0
@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 0
-  bundleVersion: 0.42beta
+  bundleVersion: 0.44beta(BestLook)
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -156,10 +156,10 @@ PlayerSettings:
     Android: com.Vicotux.CarSampleScene
     Standalone: com.Vicotux.3D-platform
   buildNumber:
-    Standalone: 0
+    Standalone: 0.44
     iPhone: 0
     tvOS: 0
-  overrideDefaultApplicationIdentifier: 0
+  overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
@@ -447,7 +447,7 @@ PlayerSettings:
   - m_BuildTarget: tvOS
     m_EncodingQuality: 1
   - m_BuildTarget: Standalone
-    m_EncodingQuality: 0
+    m_EncodingQuality: 2
   - m_BuildTarget: WebGL
     m_EncodingQuality: 0
   m_BuildTargetGroupLightmapSettings: []

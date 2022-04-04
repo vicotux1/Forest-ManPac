@@ -16,9 +16,7 @@ public class LevelManagerText: MonoBehaviour{
    void Update(){
        //ManagerUI.StartOtro();
        StartOtro();
-      if ( gamanager.currentGameState==GameState.pause)
-      {
-          Debug.Log(gamanager.currentGameState);
+      if ( gamanager.currentGameState==GameState.pause){
           ganastes.text="el juego esta pausado";  
       }
 
@@ -47,9 +45,15 @@ public void NextBola(){
 
     public void StartOtro(){
         if (GameManager.Coins==0 && GameStart== true){
-            ganastes.text="No hay mas monedas";
+            if(NextLevel!=MainMenu){
+                ganastes.text="Siguiente Nivel";
+            }
+            
+            if(NextLevel==MainMenu){
+                ganastes.text="Juego terminado";
+            }
             GameStart=false;
-            Invoke ("ganaste" ,5f);       
+            Invoke ("ganaste" ,waitTime);       
         }if(GameManager.Coins!=0){
             GameStart=true;
             gamanager.StartGame();

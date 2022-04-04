@@ -11,7 +11,6 @@ public class Coin : MonoBehaviour
 		if (other.tag == TagPlayer){
     Destroy (this.gameObject);
         GameManager.Points+=Points;
-        Debug.Log(GameManager.Points);
         GameManager.Coins--;
         }
       } 

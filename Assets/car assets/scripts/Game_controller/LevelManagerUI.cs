@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//using UnityEngine.SceneManagement;
 using TMPro;
 
 public class LevelManagerUI: MonoBehaviour{
@@ -43,11 +42,9 @@ public class LevelManagerUI: MonoBehaviour{
     }
     public void StartOtro(){
         if (GameManager.Coins==0){
-            gamanager.PauseGame();
-            Debug.Log("no hay monedas");            
+            gamanager.PauseGame();                
         }else{
-            gamanager.StartGame();
-            Debug.Log("ya hay monedas");  
+            gamanager.StartGame();  
     }
     }
 #endregion

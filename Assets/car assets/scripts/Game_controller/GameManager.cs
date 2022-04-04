@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour{
 #region Asignaciones previas
     public static GameManager gameManager;
     public static GameManager GM_Lives;
-    public static int lives=3,Points=0, Coins=0,Hearts=100;
+    public static int lives=8,Points=0, Coins=0,Hearts=100;
 
     private int _Ejemplo=0;
     public int Ejemplo{
@@ -52,29 +52,27 @@ public class GameManager : MonoBehaviour{
     public void StartGame(){
         currentGameState=GameState.inGame;
         Time.timeScale = 1;
-        Debug.Log("StartGame, time scale= "+ Time.timeScale);
     }
     public void PauseGame(){
         currentGameState=GameState.pause;
         Time.timeScale = 0;
-        Debug.Log("Pausa,time scale "+ Time.timeScale);
     }
     public void GameOver(string SceneToLoad){
         currentGameState=GameState.gameOver;
-        Time.timeScale = 0; 
-        Debug.Log("GameOver, time scale= "+ Time.timeScale);        
-        Debug.Log("gameOver");
+        Time.timeScale = 0;     
+        
 	   SceneManager.LoadScene (SceneToLoad);
        if(SceneToLoad==MainMenu){
            if(HighScore<=Points){
             HighScore=Points;
+            Debug.Log("gameOver");
         }
            ResetGame();
        }
         
 	}
     void ResetGame(){
-        lives=3;
+        lives=8;
         Hearts=100;
         Points=0;
         Coins=0;     
@@ -82,7 +80,6 @@ public class GameManager : MonoBehaviour{
     }
     void NextLive(){    
         Time.timeScale = 1;
-        Debug.Log("perdistes...pero te quedan vidas");
     }
     void livesCount(){
         if(lives==0){

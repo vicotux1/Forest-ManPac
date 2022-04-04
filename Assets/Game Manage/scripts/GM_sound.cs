@@ -17,7 +17,6 @@ public class GM_sound : MonoBehaviour{
     Destroy(this.gameObject);      
     }else{GMsound=this;
     DontDestroyOnLoad(this.gameObject);
-    Debug.Log("esto es un singleton Sound");
 	}
 }
 	public void SoundCoin(int One) {

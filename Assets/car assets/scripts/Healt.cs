@@ -10,15 +10,17 @@ public class Healt : MonoBehaviour
     [SerializeField]GameManager GameManager;
 
     void Awake(){
+      if(GameManager==null){
+        GameManager=FindObjectOfType<GameManager>();
+
+      }
       GameManager.Ejemplo+=140;
-      Debug.Log("Ejemplo= "+ GameManager.Ejemplo);
     }
     
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){
       if(SerialID==1){
           Destroy (this.gameObject);
-           Debug.Log("sumaste vida");
            GameManager.Hearts+=Value;
            GameManager.Points+=(Value/2);
       }if (SerialID==2){
