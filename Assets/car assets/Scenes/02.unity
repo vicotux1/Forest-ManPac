@@ -15,9 +15,9 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0, g: 0, b: 0, a: 1}
+  m_FogColor: {r: 0.4433962, g: 0.4203898, b: 0.4203898, a: 1}
   m_FogMode: 2
-  m_FogDensity: 0.1
+  m_FogDensity: 0.15
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.6985294, g: 0.81288034, b: 1, a: 1}
@@ -2360,7 +2360,7 @@ LightingSettings:
   m_CompAOExponentDirect: 0
   m_ExtractAO: 0
   m_MixedBakeMode: 0
-  m_LightmapsBakeMode: 0
+  m_LightmapsBakeMode: 1
   m_FilterMode: 1
   m_LightmapParameters: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
   m_ExportTrainingData: 0
@@ -3728,8 +3728,8 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
+  m_HDR: 0
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -3761,8 +3761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3f749976c088a4a8a73772e8a572bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blur: 1
-  BlurAmount: 0.05
+  Blur: 0
+  BlurAmount: 0
   BlurMask: {fileID: 0}
   Bloom: 1
   BloomColor: {r: 1, g: 0.6556604, b: 0.6556604, a: 1}
@@ -3771,26 +3771,26 @@ MonoBehaviour:
   BloomThreshold: 0
   BloomSoftness: 0
   LUT: 1
-  LutAmount: 0.8
-  SourceLut: {fileID: 2800000, guid: 29e479c8a204e604c87d96b157d1cca5, type: 3}
+  LutAmount: 0.6
+  SourceLut: {fileID: 2800000, guid: e85fe49455f5a384783b5ba2c6318001, type: 3}
   ImageFiltering: 1
-  Color: {r: 1, g: 0.8254717, b: 0.8254717, a: 1}
-  Contrast: 0.298
-  Brightness: 0.59
-  Saturation: 0.3
-  Exposure: -0.3
-  Gamma: 0
+  Color: {r: 1, g: 1, b: 1, a: 1}
+  Contrast: 0
+  Brightness: 0
+  Saturation: 1
+  Exposure: 0
+  Gamma: -0.4
   Sharpness: 0
-  ChromaticAberration: 1
+  ChromaticAberration: 0
   Offset: 0
   FishEyeDistortion: 0.18
   GlitchAmount: 0.1
-  Distortion: 0
+  Distortion: 1
   LensDistortion: 0
   Vignette: 0
   VignetteColor: {r: 0, g: 0, b: 0, a: 1}
-  VignetteAmount: 0
-  VignetteSoftness: 0.0001
+  VignetteAmount: 0.05
+  VignetteSoftness: 1
   material: {fileID: 2100000, guid: 3aeedadbfc1ffb644834cb2b7d57aa77, type: 2}
 --- !u!1 &691627940
 GameObject:
