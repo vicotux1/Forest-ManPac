@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2551943268370058859}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -27.137978, y: 0, z: 2.847453}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
+  m_LocalScale: {x: 2.65, y: 2.65, z: 2.65}
   m_Children:
   - {fileID: 2552615945539759293}
   - {fileID: 5734151630614603915}
@@ -82,10 +82,10 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.26942158
-  m_Height: 1.7487279
+  m_Radius: 0.18337524
+  m_Height: 0.9837391
   m_Direction: 1
-  m_Center: {x: -0.025635237, y: 0.8699417, z: 0}
+  m_Center: {x: -0.008425951, y: 0.48744723, z: -0}
 --- !u!114 &2520595655985961265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 2552615945539759293}
   - component: {fileID: 2638295391705836340}
   m_Layer: 0
-  m_Name: Follow
+  m_Name: CyborgGirl-Follow
   m_TagString: Follow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,15 +187,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4ac6580cb34219846b8bad9566f6a334, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.85
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4ac6580cb34219846b8bad9566f6a334, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.85
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4ac6580cb34219846b8bad9566f6a334, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.85
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4ac6580cb34219846b8bad9566f6a334, type: 3}
       propertyPath: m_LocalPosition.x
@@ -237,7 +237,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 4ac6580cb34219846b8bad9566f6a334, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4ac6580cb34219846b8bad9566f6a334, type: 3}
 --- !u!4 &5734151630614603915 stripped
 Transform:
