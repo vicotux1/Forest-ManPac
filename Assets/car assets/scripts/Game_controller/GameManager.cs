@@ -17,8 +17,8 @@ public class GameManager : MonoBehaviour{
     public static GameManager GM_Lives;
     public static int lives=8,Points=0, Coins=0,Hearts=100;
 
-    private int _Ejemplo=0;
-    public int Ejemplo{
+    private bool _Ejemplo=false;
+    public bool Ejemplo{
         get=>_Ejemplo;
         set=>_Ejemplo=value;
     }

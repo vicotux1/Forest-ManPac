@@ -4,18 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Gamemanager
   - Jugador
-  - Coin
-  - Follow
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - other
+  - 
   - Water
   - UI
-  - Post
-  - Platform
+  - 01
+  - 
   - 
   - 
   - 

@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1483277106142484014, guid: 0a757a2f8a6605c45ad638229509ec37, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2296404834915962004, guid: 0a757a2f8a6605c45ad638229509ec37, type: 3}
       propertyPath: m_IsActive
@@ -41,15 +41,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7405359719136594457, guid: 0a757a2f8a6605c45ad638229509ec37, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.779
+      value: -9.771
       objectReference: {fileID: 0}
     - target: {fileID: 7405359719136594457, guid: 0a757a2f8a6605c45ad638229509ec37, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 7405359719136594457, guid: 0a757a2f8a6605c45ad638229509ec37, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.7
+      value: -2.159
       objectReference: {fileID: 0}
     - target: {fileID: 7405359719136594457, guid: 0a757a2f8a6605c45ad638229509ec37, type: 3}
       propertyPath: m_LocalRotation.w
@@ -82,6 +82,10 @@ PrefabInstance:
     - target: {fileID: 7894475626804924579, guid: 0a757a2f8a6605c45ad638229509ec37, type: 3}
       propertyPath: m_Name
       value: Coin2Other2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230217151662943437, guid: 0a757a2f8a6605c45ad638229509ec37, type: 3}
+      propertyPath: m_Center.z
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8539259582302427728, guid: 0a757a2f8a6605c45ad638229509ec37, type: 3}
       propertyPath: Points

@@ -7,15 +7,22 @@ public class Healt : MonoBehaviour
     [SerializeField] string TagPlayer="Jugador";
     [SerializeField][Range(10,100)] int Value=10;
     [SerializeField][Range(1,2)]int SerialID=1;
-    [SerializeField]GameManager GameManager;
+    [SerializeField]bool IsCoin;
 
+    [SerializeField]GameManager GameManager;
+    void Update(){
+      if(GameManager.Ejemplo==true){
+       IsCoin=true;
+      }else{
+         IsCoin=false;
+      }
+    }
     void Awake(){
       if(GameManager==null){
         GameManager=FindObjectOfType<GameManager>();
-
+        Debug.Log(GameManager.Ejemplo);
+        }
       }
-      GameManager.Ejemplo+=140;
-    }
     
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){
@@ -26,6 +33,12 @@ public class Healt : MonoBehaviour
       }if (SerialID==2){
       GameManager.Hearts-=Value;
       GameManager.Points-=(Value/2);
+      if (IsCoin==true){
+        IsCoin=false;
+        GameManager.Points+=Value;
+        Destroy (this.gameObject);
+        
+        }
       }   
         }
   } 
