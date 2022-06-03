@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 public class PlayerController : MonoBehaviour
 {
    [SerializeField] [Range(1f, 100f)]float Speed,Rotation;
@@ -19,8 +18,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnMove(){
 
-        MoveX=CrossPlatformInputManager.GetAxisRaw("Horizontal");
-        MoveY=CrossPlatformInputManager.GetAxisRaw("Vertical");
+        MoveX=Input.GetAxisRaw("Horizontal");
+        MoveY=Input.GetAxisRaw("Vertical");
         Vector3 movement=new Vector3(MoveY,0,0).normalized*Speed*Time.deltaTime;
         rb.velocity=transform.position + movement; 
         transform.Rotate(Vector3.down*Rotation*MoveX);

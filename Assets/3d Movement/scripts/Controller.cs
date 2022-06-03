@@ -5,7 +5,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     [Header("Player Movement")]
-    [SerializeField][Range(0.1f, 10.0f)]float Speed=0.1f;
+    [SerializeField][Range(0.001f, 20.0f)]float Speed=0.1f, Gravity;
     [SerializeField] Transform MeshPlayer;
     [SerializeField] string Horizontal, Vertical,Fire;
     private  CharacterController _controller;
@@ -34,7 +34,7 @@ public class Controller : MonoBehaviour
 
         void Movement(float Horizontal, float Vertical){
             //Movement
-            Vector3 move=new Vector3(Vertical,0,Horizontal);
+            Vector3 move=new Vector3(Vertical,-Gravity,Horizontal);
             //rotate transform
             Vector3 Rotation=new Vector3 (move.x,0, move.z);
             _controller.Move(move * Time.deltaTime * Speed);

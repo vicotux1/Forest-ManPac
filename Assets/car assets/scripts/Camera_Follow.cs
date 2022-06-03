@@ -8,7 +8,7 @@ public class Camera_Follow : MonoBehaviour
 	[SerializeField] Vector3 _Distancia_a_seguir=Vector3.zero;
 	[SerializeField][Range (0.01f, 1.0f)]float smoothSpeed=0.1f;
 	[SerializeField] [Range (0, 90.0f)]float RotX=45.0f, RotY=0;
-    public GameObject Player;
+    GameObject Player;
     public string Tag_Seguir="player";
 
      void Awake() {

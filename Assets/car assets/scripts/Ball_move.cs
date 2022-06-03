@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
+
 
     public class Ball_move : MonoBehaviour
     {
@@ -10,8 +10,8 @@ using UnityStandardAssets.CrossPlatformInput;
         private Rigidbody m_Rigidbody;
 
         void Update(){
-            float MoveX=CrossPlatformInputManager.GetAxisRaw("Horizontal");
-            float MoveY=CrossPlatformInputManager.GetAxisRaw("Vertical");
+            float MoveX=Input.GetAxisRaw("Horizontal");
+            float MoveY=Input.GetAxisRaw("Vertical");
             Move(MoveX, MoveY);
             
         }
