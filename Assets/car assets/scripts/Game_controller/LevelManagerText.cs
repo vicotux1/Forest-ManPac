@@ -12,6 +12,11 @@ public class LevelManagerText: MonoBehaviour{
     bool GameStart;
     
 #region Funtion Unity
+    void awake(){
+        if (gamanager==null){
+             gamanager = FindObjectOfType<GameManager>();
+             }
+    }
 
    void Update(){
        //ManagerUI.StartOtro();
@@ -23,12 +28,16 @@ public class LevelManagerText: MonoBehaviour{
     }
     void Start(){
         gamanager = FindObjectOfType<GameManager>();
-        ganastes.text=" ";
-        NextBola();
+        //ganastes.text=" ";
+        //NextBola();
+        
     }
 #endregion
 
 #region Funtion publics Creates
+public void Dead(int liives){
+    ganastes.text="te quedan : " + liives+ " vidas";
+}
 
 public void NextBola(){
     ganastes.text="lives:"+GameManager.lives.ToString();

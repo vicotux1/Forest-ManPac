@@ -39,6 +39,7 @@ public class LevelManagerUI: MonoBehaviour{
         Lives.text=Life.ToString();
         Points.text= Score.ToString();
         gamanager = FindObjectOfType<GameManager>();
+        ManagerText.Dead(100);
     }
     public void StartOtro(){
         if (GameManager.Coins==0){

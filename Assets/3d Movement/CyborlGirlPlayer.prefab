@@ -26,7 +26,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.784, z: 1.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7763616646181793729}
   m_RootOrder: 1
@@ -60,7 +59,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -2.625, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7967466721559000332}
   - {fileID: 3064932211812513289}
@@ -69,7 +67,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &5694755255514566717
 Animator:
-  serializedVersion: 4
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -77,12 +75,11 @@ Animator:
   m_GameObject: {fileID: 4390672923215247782}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4ac6580cb34219846b8bad9566f6a334, type: 3}
-  m_Controller: {fileID: 22100000, guid: 6d4e0a82648e7824abac4f0f0d991382, type: 2}
+  m_Controller: {fileID: 9100000, guid: b4aa66ff46bdfa84f8ca6de91031bdb5, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -100,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 10
-  Gravity: 0.1
+  Gravity: 0.7
   MeshPlayer: {fileID: 7967466721559000332}
   Horizontal: Vertical
   Vertical: Horizontal
@@ -116,9 +113,9 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.87
+  m_Height: 1.9
   m_Radius: 0.3
-  m_SlopeLimit: 45
+  m_SlopeLimit: 60
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001

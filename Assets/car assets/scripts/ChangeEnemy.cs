@@ -13,7 +13,6 @@ public class ChangeEnemy : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){
-        GameManager.Coins--;
         GameManager.Ejemplo=true;
         Debug.Log(GameManager.Ejemplo);
         capsuleCollider.isTrigger=false;

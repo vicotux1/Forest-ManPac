@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 2465856703290660743}
   - component: {fileID: 2570910653978590535}
   - component: {fileID: 2489080224041306675}
-  - component: {fileID: 2520595655985961265}
-  - component: {fileID: 2520187758307046337}
   m_Layer: 0
   m_Name: CyborgGirl-character controller
   m_TagString: Jugador
@@ -86,42 +84,6 @@ CapsuleCollider:
   m_Height: 0.9837391
   m_Direction: 1
   m_Center: {x: -0.008425951, y: 0.48744723, z: -0}
---- !u!114 &2520595655985961265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2551943268370058859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Horizontal: Horizontal
-  Vertical: Vertical
-  Crounch: Crounch
-  Jump: Jump
---- !u!114 &2520187758307046337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2551943268370058859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MovingTurnSpeed: 1000
-  m_StationaryTurnSpeed: 1000
-  m_JumpPower: 7
-  m_GravityMultiplier: 1
-  m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 2
-  m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: 0.3
 --- !u!1 &2552615945539759290
 GameObject:
   m_ObjectHideFlags: 0
