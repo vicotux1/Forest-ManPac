@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6620270682287016827}
   - component: {fileID: 5705331292888591791}
   - component: {fileID: 5842571913007236512}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: EnemyChange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.73, y: 0.8, z: 5.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7080362198221421682}
   m_Father: {fileID: 0}
@@ -45,7 +44,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.75
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5842571913007236512
 MonoBehaviour:
@@ -76,7 +75,7 @@ GameObject:
   - component: {fileID: 7080362198221421682}
   - component: {fileID: 7080362198221421681}
   - component: {fileID: 7080362198221421680}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +92,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6620270682287016827}
   m_RootOrder: 0
@@ -117,7 +115,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

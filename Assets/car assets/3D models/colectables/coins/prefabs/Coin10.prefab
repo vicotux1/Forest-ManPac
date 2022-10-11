@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2237192397330276374}
   - component: {fileID: 1997921607428707979}
   - component: {fileID: 6084684955576540206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coin10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,8 +63,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TagPlayer: Jugador
+  ColiderCoin: {fileID: 1997921607428707979}
+  thisCoin: {fileID: 5361501425983758755}
   Points: 10
   audioSource: {fileID: 6084684955576540206}
+  _Coin: {fileID: 8300000, guid: a094a681f6d6301c2b1c457e44a9bdd1, type: 3}
 --- !u!135 &1997921607428707979
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -76,7 +79,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.59
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &6084684955576540206
 AudioSource:
@@ -88,7 +91,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: abc073d7b1bc9ef4ca759d634822e4a4, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -183,7 +186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 609927628203109155}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AllRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6915885969661660723}
   - component: {fileID: 1717030990881355091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coin__BodyMT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5361501425983758755}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 3.74}
   m_LocalScale: {x: 0.97, y: 0.97, z: 0.97}
   m_Children: []
   m_Father: {fileID: 1101286879022575711}
@@ -299,7 +302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 494954005253145514}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}

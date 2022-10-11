@@ -13,8 +13,8 @@ public class ChangeEnemy : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){
-        GameManager.Ejemplo=true;
-        Debug.Log(GameManager.Ejemplo);
+        GameManager.IsCoin=true;
+        //Debug.Log(GameManager.Ejemplo);
         capsuleCollider.isTrigger=false;
         renderer.material.color=Rojo;
         StartCoroutine(VidaEnemy());
@@ -29,7 +29,7 @@ public class ChangeEnemy : MonoBehaviour
       } 
       IEnumerator VidaEnemy(){
       yield return new WaitForSeconds(waitTime);
-      GameManager.Ejemplo=false;
+      GameManager.IsCoin=false;
       Debug.Log("tiempo acabado");
       Destroy (this.gameObject);
       }

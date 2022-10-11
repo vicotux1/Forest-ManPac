@@ -138,6 +138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TagPlayer: Jugador
   Value: 50
+  ColiderCoin: {fileID: 162750721831889800}
+  thisCoin: {fileID: 7747057128128891804}
   GameManager: {fileID: 0}
   audioSource: {fileID: 2078726082639256402}
 --- !u!82 &2078726082639256402

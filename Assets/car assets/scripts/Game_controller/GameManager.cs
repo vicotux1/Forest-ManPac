@@ -17,38 +17,54 @@ public class GameManager : MonoBehaviour{
     public static GameManager GM_Lives;
     public static int lives=8,Points=0, Coins=0,Hearts=100;
 
-    private bool _Ejemplo=false;
-    public bool Ejemplo{
-        get=>_Ejemplo;
-        set=>_Ejemplo=value;
-    }
+    [SerializeField] GameObject Player;
+    [SerializeField] GameObject []PrefabPlayer;
+    [SerializeField]int prefabPlayer=0;
+    [SerializeField]  string Tag_Seguir="player";
 
     public static int HighScore;
     public string MainMenu="MainMenu";
     public GameState currentGameState;
     [SerializeField]private int Life,Healt, Colectables;
-    
-    public void HealtScore(){
-     if (Hearts >= 300){
-         Hearts=100;
-        lives++;        
-        }
-    } 
-    
-#endregion
 
+    [Header ("Sound Efects")]
+    public AudioSource Fuente_audio;
+    
+    public AudioClip Dead;
+    public AudioClip Danger;
+    
+
+    private bool _IsCoin=false;
+    public bool IsCoin{
+        get=>_IsCoin;
+        set=>_IsCoin=value;
+        }
+    
+     
+#endregion
+#region Metodos Unity
     void Awake() {
          Singleton();
+         UpdatePlayer();
     }
     void Update(){
         livesCount();
         UpdateInts();
         HeartsCount();
         HealtScore();
+        UpdatePlayer();
+        if(prefabPlayer>=2){
+            prefabPlayer=0;
+        }
     }
-
+#endregion
 
 #region metodos extras
+
+    void UpdatePlayer(){
+         if (Player == null)
+            Player = GameObject.FindWithTag(Tag_Seguir);
+    }
     public void StartGame(){
         currentGameState=GameState.inGame;
         Time.timeScale = 1;
@@ -71,6 +87,12 @@ public class GameManager : MonoBehaviour{
        }
         
 	}
+    public void HealtScore(){
+     if (Hearts >= 300){
+         Hearts=100;
+        lives++;        
+        }
+    }
     void ResetGame(){
         lives=8;
         Hearts=100;
@@ -88,8 +110,13 @@ public class GameManager : MonoBehaviour{
     }
     void HeartsCount(){
         if(Hearts<=0){
+            Fuente_audio.clip=Dead;
+            Fuente_audio.Play();
+            Destroy(Player);
             lives-=1;
             Hearts=100;
+            Instantiate(PrefabPlayer[prefabPlayer]);
+            prefabPlayer++;
             
            Time.timeScale = 0;
             Invoke("NextLive", 10f);

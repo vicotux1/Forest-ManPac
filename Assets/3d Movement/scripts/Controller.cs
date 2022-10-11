@@ -8,6 +8,7 @@ public class Controller : MonoBehaviour
     [SerializeField][Range(0.001f, 20.0f)]float Speed=0.1f, Gravity;
     [SerializeField] Transform MeshPlayer;
     [SerializeField] string Horizontal, Vertical,Fire;
+    [SerializeField]  Vector3 Posicion_inicial;
     private  CharacterController _controller;
     float Axis_Horizontal, Axis_Vertical;
     Animator _anim;
@@ -16,6 +17,7 @@ public class Controller : MonoBehaviour
         _controller=GetComponent<CharacterController>();
         _anim=gameObject.GetComponent<Animator>();
         Cursor.visible = true; 
+        transform.position=Posicion_inicial;
        }
      
     void Update(){

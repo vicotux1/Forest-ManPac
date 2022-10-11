@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour{
     [SerializeField] string TagPlayer="Jugador";
+    [SerializeField] SphereCollider ColiderCoin;
+    [SerializeField] GameObject thisCoin;
     [SerializeField]int Points=10;
     [SerializeField]AudioSource audioSource;
+    [SerializeField] AudioClip _Coin;
+
     GameManager GameManager;
 
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){ 
+       audioSource.clip=_Coin;
         audioSource.Play();      
         GameManager.Points+=Points;
         GameManager.Coins--;
-        Destroy (this.gameObject);
+       thisCoin.SetActive(false);
+       ColiderCoin.enabled=false;
         
         }
     }  
