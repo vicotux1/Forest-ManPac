@@ -1960,7 +1960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TagPlayer: Jugador
-  Value: 60
+  Value: 15
   IsCoin: 0
   anim: {fileID: 1017252336869711089}
   ScriptIA: {fileID: 3250830533643527202}
