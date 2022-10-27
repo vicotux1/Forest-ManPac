@@ -911,13 +911,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MeshPlayer: {fileID: 3195555056228917644}
-  Speed: 8
+  Speed: 10
   Gravity: 0.5
-  SpeedRun: 12
+  SpeedRun: 14
   Horizontal: Vertical
   Vertical: Horizontal
   Run: Run
-  Posicion_inicial: {x: -1, y: 0.4, z: -2}
+  Posicion_inicial: {x: -6, y: 0.4, z: -2}
 --- !u!114 &8188642681135216743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1956,7 +1956,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1abd3b73834f53348bddcc350509d96d, type: 2}
+  - {fileID: 2100000, guid: 89f1e7ba22a9e1240909e8083c6124c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

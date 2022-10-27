@@ -9,18 +9,21 @@ using UnityEditor;
 #endregion
 public class pause_manager : MonoBehaviour {
 
-	public void Resolution480p (){
-		 Screen.SetResolution(848, 480, false);
+	
+	public void SetResolution (int Level){
+		if(Level==0){
+		Screen.SetResolution(848, 480, false);
 		}
-	public void Resolution600p (){
-		 Screen.SetResolution(1024, 600, false);
-		}	
-		public void Resolution720p (){
-		 Screen.SetResolution(1280, 720, false);
+		if(Level==1){
+		Screen.SetResolution(1024, 600, false);
 		}
-		public void Resolution1080p (){
-		 Screen.SetResolution(1920, 1080, false);
+		if(Level==2){
+		Screen.SetResolution(1280, 720, false);
 		}
+		if(Level==3){
+		Screen.SetResolution(1920, 1080, false);
+		}		 
+	}	
 	
     
 	#region quality	
@@ -45,10 +48,10 @@ public class pause_manager : MonoBehaviour {
 		}
 	
 	}
-	public void fullScreen(int Level){
-	if(Level==0){
+	public void fullScreen(bool Level){
+	if(Level==false){
 		Screen.fullScreen = false;
-	}else if(Level==1){
+	}else if(Level==true){
 		Screen.fullScreen = true;
 	}
 }

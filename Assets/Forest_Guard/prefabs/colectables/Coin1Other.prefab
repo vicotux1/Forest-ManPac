@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8539259582302427728}
   - component: {fileID: 8230217151662943437}
   - component: {fileID: 1056826184}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Coin1Other
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8ea8690354ed0d04d86d6b79b0dd718a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8ea8690354ed0d04d86d6b79b0dd718a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -245,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ea8690354ed0d04d86d6b79b0dd718a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ea8690354ed0d04d86d6b79b0dd718a, type: 3}
