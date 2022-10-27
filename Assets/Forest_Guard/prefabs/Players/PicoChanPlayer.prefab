@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6123572358392222578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.354, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 7131118646057380215}
@@ -66,13 +66,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MeshPlayer: {fileID: 6119297804835567018}
-  Speed: 8
-  Gravity: 0.001
-  SpeedRun: 15
+  Speed: 10
+  Gravity: 3
+  SpeedRun: 17
   Horizontal: Vertical
   Vertical: Horizontal
   Run: Run
-  Posicion_inicial: {x: 1.3, y: -0.6, z: 0}
+  Posicion_inicial: {x: 1.3, y: -0.7, z: 0}
 --- !u!143 &6316117178588304809
 CharacterController:
   m_ObjectHideFlags: 0
@@ -84,7 +84,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.41
+  m_Height: 1.25
   m_Radius: 0.22
   m_SlopeLimit: 45
   m_StepOffset: 0.3

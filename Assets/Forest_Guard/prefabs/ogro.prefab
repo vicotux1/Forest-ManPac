@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 919132147890497262}
   - component: {fileID: 2904710728455195779}
   - component: {fileID: 4505530178111457166}
-  - component: {fileID: 197356487}
+  - component: {fileID: 1816012253}
   m_Layer: 0
   m_Name: ogro
   m_TagString: Untagged
@@ -204,7 +204,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!54 &197356487
+--- !u!54 &1816012253
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

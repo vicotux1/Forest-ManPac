@@ -18,9 +18,10 @@ public class Controller : MonoBehaviour{
     private void Awake(){
         _controller=GetComponent<CharacterController>();
         _anim=gameObject.GetComponent<Animator>();
-        Cursor.visible = true; 
+        Cursor.visible = false; 
         transform.position=Posicion_inicial;
         Velocidad=Speed;
+        Movement();
        }
      
     void Update(){

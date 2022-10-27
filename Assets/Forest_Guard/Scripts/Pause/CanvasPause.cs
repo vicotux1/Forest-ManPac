@@ -15,13 +15,23 @@ public class CanvasPause : MonoBehaviour {
 	Time.timeScale = 1;
 	}
 	public void Pause(){
-        canvasPausa.enabled = !canvasPausa.enabled;
+		
+		canvasPausa.enabled = !canvasPausa.enabled;
         Time.timeScale = Time.timeScale == 0 ? 1: 0;
+		//Cursor.visible= !true; 
 		}
 
 	void Update(){
 		if (Input.GetButtonDown ("Cancel")){
-			Pause();}
-			}		
+			Pause();
+		}
+	}
+	public void CursorTrue(){
+		Cursor.visible = true; 
+	}
+	public void CursorFalse(){
+		Cursor.visible = false; 
+	}
+
 	#endregion
 }
