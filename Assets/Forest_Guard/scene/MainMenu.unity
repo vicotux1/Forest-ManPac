@@ -1363,7 +1363,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Forest Man Pac 0.52
+  m_Text: Forest 0.52-linear
 --- !u!222 &2117204907
 CanvasRenderer:
   m_ObjectHideFlags: 0
