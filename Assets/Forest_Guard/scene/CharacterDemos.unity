@@ -337,7 +337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383566289}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 1.992, y: 1.59, z: 7.87}
+  m_LocalPosition: {x: 2.55, y: 1.35, z: 7.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1633200174}
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 1
+  m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -742,7 +742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3195555056228917644, guid: 5f36a60ad7a628b418e2103828bae430, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.07
+      value: 3.329
       objectReference: {fileID: 0}
     - target: {fileID: 3195555056228917644, guid: 5f36a60ad7a628b418e2103828bae430, type: 3}
       propertyPath: m_LocalPosition.y
@@ -817,7 +817,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1

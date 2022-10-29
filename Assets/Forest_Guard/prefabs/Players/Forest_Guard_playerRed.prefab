@@ -917,7 +917,7 @@ MonoBehaviour:
   Horizontal: Vertical
   Vertical: Horizontal
   Run: Run
-  Posicion_inicial: {x: -6, y: -0.1, z: -2}
+  Posicion_inicial: {x: -4.7, y: -0.65, z: -0.5}
 --- !u!114 &8188642681135216743
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class Cube : MonoBehaviour{
     [SerializeField] string TagPlayer="Jugador";
     public GameObject Player;
     public Transform Destino;
+    public Vector3 Offset;
     void Awake(){
         searchPlayer(); 
       }
@@ -20,7 +21,7 @@ if (Player == null)
 } 
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){
-        Player.transform.position=Destino.transform.position+new Vector3(-1.0f, 0, -1.0f);
+        Player.transform.position=Destino.transform.position+Offset;
         }
     } 
 }

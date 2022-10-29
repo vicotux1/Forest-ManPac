@@ -129,8 +129,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.3767834, y: 4.15, z: 0.78}
-  m_Center: {x: -0.02037239, y: 1.8423128, z: 0.65}
+  m_Size: {x: 2.25, y: 1.95, z: 1.26}
+  m_Center: {x: 0, y: 2.1, z: -0.8}
 --- !u!114 &3329641707423939461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +146,7 @@ MonoBehaviour:
   TagPlayer: Jugador
   Player: {fileID: 0}
   Destino: {fileID: 0}
+  Offset: {x: 0, y: 0, z: -2}
 --- !u!1 &4737311674038912076
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +173,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4737311674038912076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3008397956679818354}
@@ -180,7 +181,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.22, y: 3.48}
+  m_AnchoredPosition: {x: 11.77, y: 1.55}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &6931718169715524701
@@ -307,7 +308,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -0.018933296, z: 18.590397, w: 2.8949852}
+  m_margin: {x: 0.15512276, y: 0.08521342, z: 18.590397, w: 2.8949776}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -31,8 +31,11 @@ public class Controller : MonoBehaviour{
 
     #region Movement
         void Movement(){   
-        Axis_Horizontal=Input.GetAxis(Horizontal);
-        Axis_Vertical=Input.GetAxis(Vertical);
+        //Axis_Horizontal=Input.GetAxis(Horizontal);
+       // Axis_Vertical=Input.GetAxis(Vertical);
+       Axis_Vertical=SimpleInput.GetAxis(Vertical);
+       Axis_Horizontal=SimpleInput.GetAxis(Horizontal);
+
         Vector3 Move=new Vector3(Axis_Vertical,-Gravity,Axis_Horizontal);
             
             if(Input.GetButton(Run)){               
