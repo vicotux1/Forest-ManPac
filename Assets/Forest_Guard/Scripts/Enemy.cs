@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
-{
+public class Enemy : MonoBehaviour{
     [SerializeField] string TagPlayer="Jugador";
     [SerializeField][Range(10,100)] int Value=10;
     [SerializeField]bool IsCoin;
+    [SerializeField] GameObject Orco;
     [SerializeField]Animator anim;
     public EnemyGrunt_ia  ScriptIA;
     [SerializeField]bool IsDead;
-    [SerializeField] Collider ColiderEnemy;
-    [SerializeField]AudioSource audioSource;
+    [SerializeField] CapsuleCollider ColiderEnemy;
     [SerializeField] AudioClip _Coin;
     [SerializeField] AudioClip _Dead;
+    [SerializeField] Rigidbody RB;
 
-    [SerializeField]GameManager GameManager;
+
+    GameManager GameManager;
+    SoundFXManagerv FXManager;
+
     void Update(){
       if(GameManager.IsCoin==true){
        IsCoin=true;
@@ -24,29 +27,39 @@ public class Enemy : MonoBehaviour
       }
     }
     void Awake(){
-      if(GameManager==null){
-        GameManager=FindObjectOfType<GameManager>();
-        //Debug.Log(GameManager.Ejemplo);
         IsDead=false;
+        SearchManagers();
         }
-      }
+      
+       void SearchManagers() {      
+           if(GameManager==null){
+        GameManager=FindObjectOfType<GameManager>();
+        if(FXManager==null){
+        FXManager=FindObjectOfType<SoundFXManagerv>();
+        } 
+      }   
+    }
+
     
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){
-      audioSource.clip=_Coin;
+      FXManager.SoundPlay(_Coin);
       GameManager.Hearts-=Value;
       GameManager.Points-=(Value/2);
-      audioSource.Play();
       if (IsCoin==true&& IsDead==false){
-        audioSource.clip=_Dead;
         IsCoin=false;
         IsDead=true;
-        audioSource.Play();
+        FXManager.SoundPlay(_Dead);
         GameManager.Points+=Value;
          anim.SetBool("Dead",true);
-         ColiderEnemy.enabled=false;
+        ColiderEnemy.isTrigger = false;
+        ColiderEnemy.radius=0.1f;
+        ColiderEnemy.height=0.1f;
+        transform.position=new Vector3(transform.position.x,0,transform.position.z);
+         //RB.useGravity = true;         
          ScriptIA.enabled=false;
-         transform.position=new Vector3(transform.position.x,-1.5f,transform.position.z);
+         Orco.SetActive(false);
+         
          Value=0;
         }
       }

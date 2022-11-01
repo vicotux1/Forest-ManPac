@@ -2,36 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeEnemy : MonoBehaviour
-{
+public class ChangeEnemy : MonoBehaviour{
     [SerializeField] string TagPlayer="Jugador";
     [SerializeField] Collider capsuleCollider;
-    public Color Verde, Rojo;
-    public Renderer renderer;
+    [SerializeField]Color Verde, Rojo;    
+    [SerializeField] Renderer renderer;    
     [SerializeField] float waitTime;
+    [SerializeField] AudioClip _EnemyChange;
+    
     GameManager GameManager;
+    SoundFXManagerv FXManager;
 
     void OnTriggerEnter(Collider other){
 		if (other.tag == TagPlayer){
+        FXManager.SoundPlay(_EnemyChange);        
         GameManager.IsCoin=true;
-        //Debug.Log(GameManager.Ejemplo);
         capsuleCollider.isTrigger=false;
         renderer.material.color=Rojo;
         StartCoroutine(VidaEnemy());
         }
     }  
-
-      void Awake(){
+    
+    void SearchManagers() {      
            if(GameManager==null){
         GameManager=FindObjectOfType<GameManager>();
+        if(FXManager==null){
+        FXManager=FindObjectOfType<SoundFXManagerv>();
+        } 
+      }   
+    }
+     void Awake(){
+        SearchManagers();
+        renderer.material.color=Verde;
 
-        }   
-      } 
+        }    
       IEnumerator VidaEnemy(){
       yield return new WaitForSeconds(waitTime);
       GameManager.IsCoin=false;
+      capsuleCollider.enabled=false;
       Debug.Log("tiempo acabado");
-      Destroy (this.gameObject);
+      renderer.enabled = false;   
+
       }
 
 }

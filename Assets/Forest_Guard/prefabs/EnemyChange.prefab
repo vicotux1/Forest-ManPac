@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6620270682287016827}
   - component: {fileID: 5705331292888591791}
   - component: {fileID: 5842571913007236512}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnemyChange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,8 @@ MonoBehaviour:
   Verde: {r: 0, g: 1, b: 0.18552995, a: 1}
   Rojo: {r: 1, g: 0, b: 0, a: 0}
   renderer: {fileID: 7080362198221421680}
-  waitTime: 5
+  waitTime: 20
+  _EnemyChange: {fileID: 8300000, guid: bbbd1ba5c0f15c04fb406aa0563aa1e2, type: 3}
 --- !u!1 &7080362198221421677
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,7 +76,7 @@ GameObject:
   - component: {fileID: 7080362198221421682}
   - component: {fileID: 7080362198221421681}
   - component: {fileID: 7080362198221421680}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

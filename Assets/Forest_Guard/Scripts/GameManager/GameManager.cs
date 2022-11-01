@@ -15,17 +15,20 @@ public class GameManager : MonoBehaviour{
 #region Asignaciones previas
     public static GameManager gameManager;
     public static GameManager GM_Lives;
-    public static int lives=8,Points=0, Coins=0,Hearts=100;
+    public static float _Musicvol,_SFXvol;
+    public static int lives=3,Points=0, Coins=0,Hearts=100;
+    public float Musicvol,SFXvol;
 
     [SerializeField] GameObject Player;
     [SerializeField] GameObject []PrefabPlayer;
-    [SerializeField]int prefabPlayer=0;
+    int prefabPlayer=0;
     [SerializeField]  string Tag_Seguir="player";
 
     public static int HighScore;
     public string MainMenu="MainMenu";
     public GameState currentGameState;
     [SerializeField]private int Life,Healt, Colectables;
+    [SerializeField]float volMusic, volSFX;
 
     [Header ("Sound Efects")]
     public AudioSource Fuente_audio;
@@ -53,6 +56,7 @@ public class GameManager : MonoBehaviour{
         HeartsCount();
         HealtScore();
         UpdatePlayer();
+        UpdateSound();
         if(prefabPlayer>=3){
             prefabPlayer=0;
         }
@@ -93,12 +97,26 @@ public class GameManager : MonoBehaviour{
         lives++;        
         }
     }
-    void ResetGame(){
+    public void DeadMain() {
+        ResetGame();
+         SceneManager.LoadScene (MainMenu);
+
+    }
+    public void UpdateSound() {
+        _Musicvol=Musicvol;        
+        _SFXvol=SFXvol;
+         Debug.Log(_SFXvol);
+         Debug.Log(_Musicvol);
+         }
+
+
+    public void ResetGame(){
         lives=8;
         Hearts=100;
         Points=0;
         Coins=0;     
-        Time.timeScale = 1;
+        Time.timeScale =
+        Time.timeScale == 0 ? 1: 0;
     }
     void NextLive(){    
         Time.timeScale = 1;

@@ -72,7 +72,7 @@ MonoBehaviour:
   Horizontal: Vertical
   Vertical: Horizontal
   Run: Run
-  Posicion_inicial: {x: 1.2, y: -0.7, z: 1.2}
+  Posicion_inicial: {x: 0, y: -2.22, z: 2.56}
 --- !u!143 &6316117178588304809
 CharacterController:
   m_ObjectHideFlags: 0

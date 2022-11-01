@@ -22,9 +22,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: GuardPlayer_toon4
   m_Shader: {fileID: 4800000, guid: 766736548846cdf459a9766614dcccab, type: 3}
-  m_ShaderKeywords: _ _EMISSIVE_SIMPLE _IS_ANGELRING_OFF _IS_OUTLINE_CLIPPING_NO
-    _IS_TRANSCLIPPING_OFF _METALLICSPECGLOSSMAP _NORMALMAP _OUTLINE_POS _SHADINGGRADEMAP
-    _SPECULAR_SETUP
+  m_ShaderKeywords: _ _EMISSIVE_SIMPLE _IS_ANGELRING_OFF _IS_TRANSCLIPPING_OFF _METALLICSPECGLOSSMAP
+    _NORMALMAP _OUTLINE_POS _SHADINGGRADEMAP _SPECULAR_SETUP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -196,7 +195,7 @@ Material:
     - _Blend: 0
     - _BlurLevelMatcap: 0
     - _BlurLevelSGM: 0
-    - _BumpScale: 3
+    - _BumpScale: 1
     - _BumpScaleMatcap: 1
     - _CameraRolling_Stabilizer: 0
     - _ClearCoat: 0
@@ -224,19 +223,19 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _HighColor_Power: 0.7
+    - _HighColor_Power: 0
     - _Inverse_Clipping: 0
     - _Inverse_MatcapMask: 0
     - _Inverse_Z_Axis_BLD: 1
     - _IsBaseMapAlphaAsClippingMask: 0
     - _Is_BLD: 0
     - _Is_BakedNormal: 0
-    - _Is_BlendAddToHiColor: 1
+    - _Is_BlendAddToHiColor: 0
     - _Is_BlendAddToMatCap: 1
     - _Is_BlendBaseColor: 0
     - _Is_ColorShift: 0
     - _Is_Filter_HiCutPointLightColor: 0
-    - _Is_Filter_LightColor: 0
+    - _Is_Filter_LightColor: 1
     - _Is_LightColor_1st_Shade: 1
     - _Is_LightColor_2nd_Shade: 1
     - _Is_LightColor_AR: 0
@@ -253,8 +252,8 @@ Material:
     - _Is_Ortho: 0
     - _Is_OutlineTex: 0
     - _Is_PingPong_Base: 0
-    - _Is_SpecularToHighColor: 1
-    - _Is_UseTweakHighColorOnShadow: 1
+    - _Is_SpecularToHighColor: 0
+    - _Is_UseTweakHighColorOnShadow: 0
     - _Is_UseTweakMatCapOnShadow: 0
     - _Is_ViewCoord_Scroll: 0
     - _Is_ViewShift: 0
@@ -294,10 +293,10 @@ Material:
     - _SRPDefaultUnlitColMode: 1
     - _Scroll_EmissiveU: 0
     - _Scroll_EmissiveV: 0
-    - _Set_SystemShadowsToBase: 1
+    - _Set_SystemShadowsToBase: 0
     - _ShadeColor_Step: 0
     - _ShadowMask: 0
-    - _Smoothness: 0.2
+    - _Smoothness: 0.3
     - _SmoothnessTextureChannel: 0
     - _Specular: 0
     - _SpecularExponent: 200
