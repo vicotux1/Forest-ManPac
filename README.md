@@ -12,5 +12,9 @@
 
 **Gate Teletransport**
 
+![](https://github.com/vicotux1/ManPac/blob/ee05925b37104ec525b355afbf450fc4d7b28074/Capturas/Captura2Players.PNG)
+
+**Escena 2 players**
+
 
 
