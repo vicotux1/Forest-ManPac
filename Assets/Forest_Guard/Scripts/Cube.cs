@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Cube : MonoBehaviour{
-    [SerializeField] string TagPlayer="Jugador";
+    [SerializeField] string TagPlayer;
+
     public GameObject Player;
     public Transform Destino;
     public Vector3 Offset;
@@ -16,12 +17,16 @@ public class Cube : MonoBehaviour{
       } 
 
 void searchPlayer(){
-if (Player == null)
- Player=GameObject.FindGameObjectWithTag(TagPlayer);
+//if (Player == null)
+ //Player=GameObject.FindGameObjectWithTag(TagPlayer);
 } 
     void OnTriggerEnter(Collider other){
-		if (other.tag == TagPlayer){
-        Player.transform.position=Destino.transform.position+Offset;
+		if (other.tag == TagPlayer ){
+
+
+        //Player.transform.position=Destino.transform.position+Offset;
+       other.transform.position=Destino.transform.position+Offset;
+
         }
     } 
 }

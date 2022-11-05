@@ -724,6 +724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Forest_Guard_player
       objectReference: {fileID: 0}
+    - target: {fileID: 2815652225769683766, guid: 5f36a60ad7a628b418e2103828bae430, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3195555056228917644, guid: 5f36a60ad7a628b418e2103828bae430, type: 3}
       propertyPath: m_RootOrder
       value: 4

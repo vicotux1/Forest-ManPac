@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour{
     [SerializeField] string TagPlayer="Jugador";
-    [SerializeField][Range(10,100)] int Value=10;
+    [SerializeField][Range(1,100)] int Value=1;
     [SerializeField]bool IsCoin;
     [SerializeField] GameObject Orco;
     [SerializeField]Animator anim;
