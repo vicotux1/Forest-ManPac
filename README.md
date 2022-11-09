@@ -1,7 +1,7 @@
 <h1 align="center">Hola, soy Dario Miranda</h1>
 <h3 align="center">Un desarollador aficionada de videojuegos</h3>
 
-- 🔭 I’m currently working on [Forest ManPac](https://github.com/vicotux1/ManPac)
+- 🔭 I’m currently working on [ManPac](https://github.com/vicotux1/ManPac)
 
 - 🌱 I’m currently learning **Unity Engine**
 
