@@ -1,3 +1,7 @@
+
+
+https://user-images.githubusercontent.com/66534526/200880306-7bae4163-b86e-4278-ac6c-5d67a795869f.mp4
+
 ![](Packages/com.alelievr.mixture/Documentation~/Images/Mixture-github.png)
 
 [![Discord](https://img.shields.io/discord/823720615965622323.svg?style=for-the-badge)](https://discord.gg/DGxZRP3qeg)
@@ -12,10 +16,3 @@ Mixture is a powerful node-based tool crafted in unity to generate all kinds of 
 
 
 Mixture Variants:
-
-https://user-images.githubusercontent.com/vicotux1/Forest-ManPac/.github/images/Forest_0.53.4-2Players.mp4
-
-
-Earth Heightmap node:
-
-https://user-images.githubusercontent.com/6877923/123006036-64e2e780-d3b7-11eb-922e-018994b32da5.mov
