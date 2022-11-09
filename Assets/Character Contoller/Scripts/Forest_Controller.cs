@@ -7,7 +7,7 @@ public class Forest_Controller : MonoBehaviour{
     private Vector3 moveDirection = Vector3.zero;
     [SerializeField][Range(0.001f, 20.0f)]
     float Speed=0.1f,SpeedRun;
-    [SerializeField]bool Invert_Vertical;
+    [SerializeField]bool Is_SideScroll;
    [SerializeField]bool CursorIsvisble=false;
     [SerializeField]string Horizontal, Vertical, Run;
     
@@ -24,7 +24,7 @@ public class Forest_Controller : MonoBehaviour{
      
     void Update(){
         Axis_Horizontal=Input.GetAxis(Horizontal);
-        if (Invert_Vertical==true) { 
+        if (Is_SideScroll==true) { 
             Axis_Vertical=-Input.GetAxis(Vertical);
            }  else { 
             Axis_Vertical=Input.GetAxis(Vertical);

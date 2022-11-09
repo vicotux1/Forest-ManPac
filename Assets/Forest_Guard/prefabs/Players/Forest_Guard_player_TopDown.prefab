@@ -825,7 +825,7 @@ GameObject:
   - component: {fileID: 6666236336834179806}
   m_Layer: 0
   m_Name: low_body
-  m_TagString: Untagged
+  m_TagString: ForestGuard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2009,7 +2009,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8006231776074193497}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 10, z: -7}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
@@ -2074,10 +2074,10 @@ MonoBehaviour:
   Speed: 8
   SpeedRun: 14
   Invert_Vertical: 0
-  CursorIsvisble: 0
-  Horizontal: Vertical
-  Vertical: Horizontal
-  Run: Fire2
+  CursorIsvisble: 1
+  Horizontal: Vertical2
+  Vertical: Horizontal2
+  Run: Fire1-1
 --- !u!114 &6512601301133939425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2090,9 +2090,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4183ecdd73f28b43a8cbc55c11aac1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 13.5
-  gravity: 15
-  JumpButton: Jump
+  jumpSpeed: 0
+  gravity: 20
+  JumpButton: jump
   _anim: {fileID: 3652460090148346521}
 --- !u!82 &4584709272795425708
 AudioSource:

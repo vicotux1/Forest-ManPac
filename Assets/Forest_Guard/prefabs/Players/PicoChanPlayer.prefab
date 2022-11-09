@@ -6922,9 +6922,9 @@ MonoBehaviour:
   SpeedRun: 13
   Invert_Vertical: 0
   CursorIsvisble: 1
-  Horizontal: Vertical
-  Vertical: Horizontal
-  Run: Fire2
+  Horizontal: Vertical1
+  Vertical: Horizontal1
+  Run: Fire1-2
 --- !u!114 &2065934859784498095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6938,8 +6938,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpSpeed: 0
-  gravity: 10
-  JumpButton: Fire1-1
+  gravity: 20
+  JumpButton: Jump
   _anim: {fileID: 6172576809094007454}
 --- !u!82 &2870190279257275702
 AudioSource:
@@ -7675,7 +7675,7 @@ GameObject:
   - component: {fileID: 6636755008780442732}
   m_Layer: 0
   m_Name: pico_chan_chr_pico_00
-  m_TagString: Untagged
+  m_TagString: Follow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7687,7 +7687,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6292000545701316310}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
