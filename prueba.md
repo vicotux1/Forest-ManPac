@@ -13,7 +13,7 @@ Mixture is a powerful node-based tool crafted in unity to generate all kinds of 
 
 Mixture Variants:
 
-https://user-images.githubusercontent.com/6877923/115474571-03c75800-a23e-11eb-8096-8973aad5fa9f.mp4
+https://user-images.githubusercontent.com/vicotux1/Forest-ManPac/.github/images/Forest_0.53.4-2Players.mp4
 
 
 Earth Heightmap node:
