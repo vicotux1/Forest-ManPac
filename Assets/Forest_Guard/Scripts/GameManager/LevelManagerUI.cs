@@ -7,7 +7,7 @@ using TMPro;
 public class LevelManagerUI: MonoBehaviour{
     [Header("Game Datos")]
     [SerializeField]int Life;  
-    int Score, Heart, coins,highScore ;
+    int Score, Heart, coins;//highScore ;
     
     int lifeGameOver=0;
     [Header("textos")]
@@ -27,11 +27,11 @@ public class LevelManagerUI: MonoBehaviour{
         Score=GameManager.Points;
         Heart=GameManager.Hearts;
         coins=GameManager.Coins;
-        highScore=GameManager.HighScore;
+        //highScore=GameManager.HighScore;
         Lives.text=Life.ToString();
         Points.text= Score.ToString();
         HeartText.text=Heart.ToString();
-        HighScore.text=highScore.ToString();
+        //HighScore.text=highScore.ToString();
         LifeCoint();
     }
     void Start(){
