@@ -85,14 +85,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7e30e1f0ec887488edb03bb035fd1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FXManager: {fileID: 0}
   MeshPlayer: {fileID: 8311766899800248494}
   Speed: 8
   SpeedRun: 12
-  Invert_Vertical: 0
+  Is_SideScroll: 1
+  Foot: {fileID: 8300000, guid: e5bbdf6f42e531f4c9710cf2e9bf178e, type: 3}
   CursorIsvisble: 1
-  Horizontal: Vertical
-  Vertical: Horizontal
-  Run: Fire2
+  Horizontal: Horizontal2
+  Vertical: Vertical2
+  Run: Fire1-1
+  _Sound: 1
 --- !u!82 &4356229243601244417
 AudioSource:
   m_ObjectHideFlags: 0
@@ -268,6 +271,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5837308063069409968, guid: 854288dc537420f499743f440dc6e5f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4658540532784917034, guid: 854288dc537420f499743f440dc6e5f8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -275,6 +282,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 854288dc537420f499743f440dc6e5f8, type: 3}
       propertyPath: m_Name
       value: Forest_Guard_Meshes
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 854288dc537420f499743f440dc6e5f8, type: 3}
+      propertyPath: m_TagString
+      value: Follow
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5866666021909216657, guid: 854288dc537420f499743f440dc6e5f8, type: 3}
