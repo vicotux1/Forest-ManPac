@@ -2802,8 +2802,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6180321464417140603}
   - component: {fileID: 226522983436641537}
-  - component: {fileID: 8740938856737652859}
   - component: {fileID: 8273784626657333697}
+  - component: {fileID: 5715579359389688061}
+  - component: {fileID: 7590194590174688032}
   m_Layer: 0
   m_Name: RebeccaChambers_Prefab
   m_TagString: Jugador
@@ -2820,7 +2821,7 @@ Transform:
   m_GameObject: {fileID: 6813727485323011521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6496702521524986023}
   - {fileID: 1843304220963397615}
@@ -2846,26 +2847,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8740938856737652859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6813727485323011521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4515eba9c56cf0d41aa68e81ca0bb081, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MeshPlayer: {fileID: 6180321464417140603}
-  Speed: 10
-  Gravity: 3
-  SpeedRun: 17
-  Horizontal: Vertical
-  Vertical: Horizontal
-  Run: Run
-  Posicion_inicial: {x: -5, y: -0.68, z: -0.5}
 --- !u!143 &8273784626657333697
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2884,6 +2865,45 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.82, z: 0}
+--- !u!114 &5715579359389688061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813727485323011521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7e30e1f0ec887488edb03bb035fd1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FXManager: {fileID: 0}
+  MeshPlayer: {fileID: 6180321464417140603}
+  Speed: 8
+  SpeedRun: 12
+  Is_SideScroll: 1
+  Foot: {fileID: 8300000, guid: e5bbdf6f42e531f4c9710cf2e9bf178e, type: 3}
+  CursorIsvisble: 1
+  Horizontal: Horizontal2
+  Vertical: Vertical2
+  Run: Fire1-1
+  _Sound: 1
+--- !u!114 &7590194590174688032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813727485323011521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4183ecdd73f28b43a8cbc55c11aac1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpSpeed: 0
+  gravity: 20
+  JumpButton: Jump
+  _anim: {fileID: 226522983436641537}
 --- !u!1 &6946665203969551001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3961,7 +3981,7 @@ GameObject:
   - component: {fileID: 6496702521524986023}
   m_Layer: 0
   m_Name: Resident_Evil_5___Rebecca_Chambers
-  m_TagString: Untagged
+  m_TagString: Follow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

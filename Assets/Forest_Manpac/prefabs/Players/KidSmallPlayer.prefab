@@ -1387,7 +1387,7 @@ GameObject:
   - component: {fileID: 5735083025920272763}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Follow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1599,14 +1599,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7e30e1f0ec887488edb03bb035fd1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FXManager: {fileID: 0}
   MeshPlayer: {fileID: 6826363837152891842}
   Speed: 8
   SpeedRun: 12
-  Invert_Vertical: 0
+  Is_SideScroll: 1
+  Foot: {fileID: 8300000, guid: e5bbdf6f42e531f4c9710cf2e9bf178e, type: 3}
   CursorIsvisble: 1
-  Horizontal: Vertical
-  Vertical: Horizontal
-  Run: Fire2
+  Horizontal: Horizontal2
+  Vertical: Vertical2
+  Run: Fire1-2
+  _Sound: 1
 --- !u!82 &8371826896242629555
 AudioSource:
   m_ObjectHideFlags: 0

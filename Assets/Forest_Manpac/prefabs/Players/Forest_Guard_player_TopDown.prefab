@@ -2011,7 +2011,7 @@ Transform:
   m_GameObject: {fileID: 8006231776074193497}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 10, z: -7}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6357399710316749768}
   - {fileID: 155017375183035444}
@@ -2070,14 +2070,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7e30e1f0ec887488edb03bb035fd1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FXManager: {fileID: 0}
   MeshPlayer: {fileID: 7228288178823135459}
   Speed: 8
   SpeedRun: 14
-  Invert_Vertical: 0
+  Is_SideScroll: 0
+  Foot: {fileID: 0}
   CursorIsvisble: 1
   Horizontal: Vertical2
   Vertical: Horizontal2
   Run: Fire1-1
+  _Sound: 0
 --- !u!114 &6512601301133939425
 MonoBehaviour:
   m_ObjectHideFlags: 0

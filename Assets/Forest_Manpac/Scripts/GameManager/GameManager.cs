@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour{
     public static GameManager gameManager;
     public static GameManager GM_Lives;
     public static float _Musicvol,_SFXvol;
-    public static int lives=5,Points=0, Coins=0,Hearts=100;
+    public static int lives=10,Points=0, Coins=0,Hearts=100;
     public float Musicvol,SFXvol;
     [SerializeField] SoundFXManagerv FXManager;
 
@@ -141,7 +141,7 @@ public class GameManager : MonoBehaviour{
     }
 
     void SearchManagers() {
-        if(prefabPlayer>=3){
+        if(prefabPlayer>=5){
             prefabPlayer=0;
         }
         if(FXManager==null){
