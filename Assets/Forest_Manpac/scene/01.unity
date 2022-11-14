@@ -22872,9 +22872,9 @@ MonoBehaviour:
   FXManager: {fileID: 0}
   Player: {fileID: 0}
   PrefabPlayer:
-  - {fileID: 6203777837826691013, guid: 94e47bb1fd635cc46a65ea8445d3e6d6, type: 3}
   - {fileID: 1925346331793054621, guid: 97341c73d4b94424b81eec6687d93efe, type: 3}
   - {fileID: 6203777837826691013, guid: 94e47bb1fd635cc46a65ea8445d3e6d6, type: 3}
+  - {fileID: 1925346331793054621, guid: 97341c73d4b94424b81eec6687d93efe, type: 3}
   Tag_Seguir: Jugador
   MainMenu: MainMenu
   currentGameState: 0
@@ -42313,7 +42313,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6201297670679193885, guid: 94e47bb1fd635cc46a65ea8445d3e6d6, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6201297670679193885, guid: 94e47bb1fd635cc46a65ea8445d3e6d6, type: 3}
       propertyPath: m_LocalPosition.x
