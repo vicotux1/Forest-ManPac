@@ -1,4 +1,5 @@
 #region previous assignments
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -141,7 +142,7 @@ public class GameManager : MonoBehaviour{
     }
 
     void SearchManagers() {
-        if(prefabPlayer>=5){
+        if(prefabPlayer==6){
             prefabPlayer=0;
         }
         if(FXManager==null){
